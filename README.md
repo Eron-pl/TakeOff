@@ -127,8 +127,9 @@ Scenariusz bazowy:
 7. System rozpoczyna pobieranie plików instalacyjnych
 8. System instaluje pobrane programy
 
-__Scenariusz alternatywny__:  
--
+__Scenariusz alternatywny__:    
+BRAK
+
 __Warunki końcowe:__  
 Na urządzeniu zainstalowane zostały wcześniej wybrane programy
 
