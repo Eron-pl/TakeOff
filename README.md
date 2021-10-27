@@ -242,5 +242,3 @@ __Scenariusz alternatywny:__
 __Warunki końcowe:__    
 Oprogramowanie zostało zaktualizowane
 
-
-
