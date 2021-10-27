@@ -1,4 +1,7 @@
 # TakeOff `v1.0.0`
+_Patryk Sablik_  
+_Mateusz Nawieśniak_  
+_Bartek Pisczur_
 ## 1 Wstęp
 ### 1.1 Cel dokumentu
 Dokument ten ma za zadanie przybliżyć funkcje, potencjalnych klientów oraz przypadki użycia
@@ -105,6 +108,7 @@ __Scenariusz bazowy:__
 __Scenariusz alternatywny:__
 * Użytkownik zatwierdził wybór bez wybrania programu  
 Wyświetla się komunikat o braku wyboru  
+
 __Warunki końcowe__:  
 Na urządzeniu zainstalowane zostały wcześniej wybrane programy  
 
@@ -154,7 +158,7 @@ __Scenariusz bazowy:__
 __Scenariusz alternatywny__:  
 * Zainstalowane programy nie są wspierane przez System 
  
-__Warunki końcowe:__ 
+__Warunki końcowe:__  
 Został stworzony plik zawierający spis zainstalowanych na urządzeniu wspieranych programów  
 
 ### 5.4 UC #004: Odczytywanie i instalacja programów z wcześniej przygotowanego pliku
@@ -188,7 +192,7 @@ Program wyświetla komunikat z informacją że plik jest pusty
 * Użytkownik wskazał niekompatybilny z systemem plik
 System wyświetla komunikat o niepoprawnym pliku
 
-__Warunki końcowe:__  
+__Warunki końcowe:__    
 Na urządzeniu zainstalowane zostały programy z pliku  
 
 ### 5.5 UC #005: Sprawdzanie wersji zainstalowanego oprogramowania
@@ -210,7 +214,8 @@ oprogramowania
 
 __Scenariusz alternatywny:__
 * System nie znalazł aktualizacji
-Warunki końcowe:
+
+__Warunki końcowe:__  
 Sprawdzona została aktualność oprogramowania na urządzeniu  
 
 ### 5.6 UC #006: Aktualizacja zainstalowanego oprogramowania
@@ -232,8 +237,9 @@ __Scenariusz bazowy:__
 5. System aktualizuje oprogramowanie
 
 __Scenariusz alternatywny:__
-* Użytkownik nie uruchomił aktualizacji
-Warunki końcowe:
+* Użytkownik nie uruchomił aktualizacji  
+
+__Warunki końcowe:__    
 Oprogramowanie zostało zaktualizowane
 
 
