@@ -2,6 +2,7 @@
 _Patryk Sablik_  
 _Mateusz Nawieśniak_  
 _Bartek Pisczur_
+
 ## 1 Wstęp
 ### 1.1 Cel dokumentu
 Dokument ten ma za zadanie przybliżyć funkcje, potencjalnych klientów oraz przypadki użycia
@@ -239,6 +240,9 @@ __Scenariusz bazowy:__
 __Scenariusz alternatywny:__
 * Użytkownik nie uruchomił aktualizacji  
 
+
 __Warunki końcowe:__    
 Oprogramowanie zostało zaktualizowane
+
+
 
