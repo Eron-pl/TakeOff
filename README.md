@@ -128,7 +128,7 @@ Scenariusz bazowy:
 8. System instaluje pobrane programy
 
 __Scenariusz alternatywny__:    
-BRAK
+_Brak_
 
 __Warunki końcowe:__  
 Na urządzeniu zainstalowane zostały wcześniej wybrane programy
@@ -161,10 +161,10 @@ Został stworzony plik zawierający spis zainstalowanych na urządzeniu wspieran
 __Aktorzy:__ 
 Użytkownik
 
-__Cele:__ 
+__Cele:__   
 Instalacja programów zapisanych we wcześniej przygotowanym pliku
 
-__Warunki początkowe:__ 
+__Warunki początkowe:__   
 System użytkownika jest zaraz po formatowaniu, nie ma na nim zainstalowanych żadnych
 programów z pliku
 
@@ -192,13 +192,13 @@ __Warunki końcowe:__
 Na urządzeniu zainstalowane zostały programy z pliku
 
 ### 5.5 UC #005: Sprawdzanie wersji zainstalowanego oprogramowania
-__Aktorzy:__ 
+__Aktorzy:__     
 Użytkownik
 
-__Cele:__ 
+__Cele:__   
 Sprawdzanie wersji zainstalowanego oprogramowania
 
-__Warunki początkowe:__
+__Warunki początkowe:__  
 System użytkownika jest już po instalacji wspieranych programów
 
 __Scenariusz bazowy:__
