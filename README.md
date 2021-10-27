@@ -116,6 +116,7 @@ Na urządzeniu zainstalowane zostały wcześniej wybrane programy
 ### 5.2 UC #002: Instalacja programów z pakietu
 __Aktorzy:__  
 Użytkownik  
+
 __Cele:__  
 Instalacja programów z pakietu wybranego przez użytkownika
 
