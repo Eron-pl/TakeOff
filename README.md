@@ -106,7 +106,7 @@ __Scenariusz alternatywny:__
 * Użytkownik zatwierdził wybór bez wybrania programu  
 Wyświetla się komunikat o braku wyboru  
 __Warunki końcowe__:  
-Na urządzeniu zainstalowane zostały wcześniej wybrane programy
+Na urządzeniu zainstalowane zostały wcześniej wybrane programy  
 
 ### 5.2 UC #002: Instalacja programów z pakietu
 __Aktorzy:__  
@@ -131,7 +131,7 @@ __Scenariusz alternatywny__:
 _Brak_
 
 __Warunki końcowe:__  
-Na urządzeniu zainstalowane zostały wcześniej wybrane programy
+Na urządzeniu zainstalowane zostały wcześniej wybrane programy  
 
 ### 5.3 UC #003: Zapisywanie zainstalowanych programów do pliku
 __Aktorzy:__  
@@ -155,10 +155,10 @@ __Scenariusz alternatywny__:
 * Zainstalowane programy nie są wspierane przez System 
  
 __Warunki końcowe:__ 
-Został stworzony plik zawierający spis zainstalowanych na urządzeniu wspieranych programów
+Został stworzony plik zawierający spis zainstalowanych na urządzeniu wspieranych programów  
 
 ### 5.4 UC #004: Odczytywanie i instalacja programów z wcześniej przygotowanego pliku
-__Aktorzy:__ 
+__Aktorzy:__   
 Użytkownik
 
 __Cele:__   
@@ -189,7 +189,7 @@ Program wyświetla komunikat z informacją że plik jest pusty
 System wyświetla komunikat o niepoprawnym pliku
 
 __Warunki końcowe:__  
-Na urządzeniu zainstalowane zostały programy z pliku
+Na urządzeniu zainstalowane zostały programy z pliku  
 
 ### 5.5 UC #005: Sprawdzanie wersji zainstalowanego oprogramowania
 __Aktorzy:__     
@@ -211,7 +211,7 @@ oprogramowania
 __Scenariusz alternatywny:__
 * System nie znalazł aktualizacji
 Warunki końcowe:
-Sprawdzona została aktualność oprogramowania na urządzeniu
+Sprawdzona została aktualność oprogramowania na urządzeniu  
 
 ### 5.6 UC #006: Aktualizacja zainstalowanego oprogramowania
 __Aktorzy:__  
