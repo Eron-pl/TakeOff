@@ -128,12 +128,14 @@ Scenariusz bazowy:
 8. System instaluje pobrane programy
 
 __Scenariusz alternatywny__:  
+-
 __Warunki końcowe:__  
 Na urządzeniu zainstalowane zostały wcześniej wybrane programy
 
 ### 5.3 UC #003: Zapisywanie zainstalowanych programów do pliku
 __Aktorzy:__  
 Użytkownik
+
 __Cele:__  
 Utworzenie pliku zawierającego informację o zainstalowanych na urządzeniu programach
 
@@ -149,7 +151,8 @@ __Scenariusz bazowy:__
 5. Program zapisuje dane do pliku we wcześniej wskazanej lokalizacji
 
 __Scenariusz alternatywny__:  
-* Zainstalowane programy nie są wspierane przez System  
+* Zainstalowane programy nie są wspierane przez System 
+ 
 __Warunki końcowe:__ 
 Został stworzony plik zawierający spis zainstalowanych na urządzeniu wspieranych programów
 
