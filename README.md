@@ -37,7 +37,7 @@ lub możliwość zapisania przed formatowaniem do pliku posiadanych programów, 
 sformatowaniu urządzenia można było za pomocą tego pliku automatycznie pobrać wszystkie
 poprzednio zainstalowane programy (lub przed pobieraniem ręcznie wykluczyć ich część).
 Sama nazwa odnosi się do założonego przeznaczenia programu - użytkownik
-włącza nowy (lub po sfromatowaniu) sprzęt i chce szybko zainstalować wszystkie
+włącza nowy (lub po sformatowaniu) sprzęt i chce szybko zainstalować wszystkie
 programy jakich potrzebuje. Cały proces ma byc szybki jak odlot samolotu.
 
 ### 2.2 Użyte Technologie
@@ -104,16 +104,17 @@ __Scenariusz bazowy:__
 
 __Scenariusz alternatywny:__
 * Użytkownik zatwierdził wybór bez wybrania programu  
-Wyświetla się komunikat o braku wyboru
+Wyświetla się komunikat o braku wyboru  
 __Warunki końcowe__:  
 Na urządzeniu zainstalowane zostały wcześniej wybrane programy
 
 ### 5.2 UC #002: Instalacja programów z pakietu
-Aktorzy:
-Użytkownik
-Cele:
+__Aktorzy:__  
+Użytkownik  
+__Cele:__  
 Instalacja programów z pakietu wybranego przez użytkownika
-Warunki początkowe:
+
+__Warunki początkowe:__  
 System użytkownika jest zaraz po formatowaniu, nie ma na nim zainstalowanych żadnych
 programów z pakietu
 Scenariusz bazowy:
@@ -125,15 +126,15 @@ Scenariusz bazowy:
 6. System sprawdza czy żaden z programów będących w pakiecie nie jest już zainstalowany
 7. System rozpoczyna pobieranie plików instalacyjnych
 8. System instaluje pobrane programy
-Scenariusz alternatywny
--
-Warunki końcowe:
+
+__Scenariusz alternatywny__:  
+__Warunki końcowe:__  
 Na urządzeniu zainstalowane zostały wcześniej wybrane programy
 
 ### 5.3 UC #003: Zapisywanie zainstalowanych programów do pliku
-Aktorzy:
+__Aktorzy:__  
 Użytkownik
-Cele:
+__Cele:__  
 Utworzenie pliku zawierającego informację o zainstalowanych na urządzeniu programach
 Warunki początkowe:
 System użytkownika nie został jeszcze sformatowany, użytkownik przygotowuje się do
