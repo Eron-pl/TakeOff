@@ -136,31 +136,35 @@ __Aktorzy:__
 Użytkownik
 __Cele:__  
 Utworzenie pliku zawierającego informację o zainstalowanych na urządzeniu programach
-Warunki początkowe:
+
+__Warunki początkowe:__  
 System użytkownika nie został jeszcze sformatowany, użytkownik przygotowuje się do
 formatowania
-Scenariusz bazowy:
+
+__Scenariusz bazowy:__
 1. Użytkownik uruchamia program sprawdzający oprogramowanie
 2. Program pyta użytkownika o lokalizacje zapisu pliku z programami
 3. Użytkownik wybiera lokalizację zapisu
 4. Program wyszukuje na urządzeniu wspierane programy
 5. Program zapisuje dane do pliku we wcześniej wskazanej lokalizacji
-Scenariusz alternatywny
-a) Zainstalowane programy nie są wspierane przez System
-Warunki końcowe:
+
+__Scenariusz alternatywny__:  
+* Zainstalowane programy nie są wspierane przez System  
+__Warunki końcowe:__ 
 Został stworzony plik zawierający spis zainstalowanych na urządzeniu wspieranych programów
 
-### 5.4 UC #004: Odczytywanie i instalacja programów z wcześniej
-przygotowanego pliku
-Aktorzy:
+### 5.4 UC #004: Odczytywanie i instalacja programów z wcześniej przygotowanego pliku
+__Aktorzy:__ 
 Użytkownik
-Cele:
+
+__Cele:__ 
 Instalacja programów zapisanych we wcześniej przygotowanym pliku
-Warunki początkowe:
+
+__Warunki początkowe:__ 
 System użytkownika jest zaraz po formatowaniu, nie ma na nim zainstalowanych żadnych
 programów z pliku
 
-Scenariusz bazowy:
+__Scenariusz bazowy:__
 1. Użytkownik wybiera opcję instalowania programów z pliku
 2. System wyświetla eksplorator plików
 3. Użytkownik wybiera w eksploratorze wcześniej wygenerowany plik
@@ -171,50 +175,60 @@ Scenariusz bazowy:
 8. System sprawdza czy żaden z wybranych programów nie jest już zainstalowany
 9. System rozpoczyna pobieranie plików instalacyjnych
 10. System instaluje pobrane programy
-Scenariusz alternatywny
-a) Użytkownik nie odznaczył żadnych programów
+
+__Scenariusz alternatywny:__
+* Użytkownik nie odznaczył żadnych programów
 System instaluje wszystkie programy z listy
-b) Odczytywany plik jest pusty
+* Odczytywany plik jest pusty
 Program wyświetla komunikat z informacją że plik jest pusty
-c) Użytkownik wskazał niekompatybilny z systemem plik
+* Użytkownik wskazał niekompatybilny z systemem plik
 System wyświetla komunikat o niepoprawnym pliku
-Warunki końcowe:
+
+__Warunki końcowe:__  
 Na urządzeniu zainstalowane zostały programy z pliku
 
 ### 5.5 UC #005: Sprawdzanie wersji zainstalowanego oprogramowania
-Aktorzy:
+__Aktorzy:__ 
 Użytkownik
-Cele:
+
+__Cele:__ 
 Sprawdzanie wersji zainstalowanego oprogramowania
-Warunki początkowe:
+
+__Warunki początkowe:__
 System użytkownika jest już po instalacji wspieranych programów
-Scenariusz bazowy:
+
+__Scenariusz bazowy:__
 1. System w regularnych odstępach czasowych przeprowadza audyt wersji zainstalowanych
 programów
 2. System porównuje zgromadzone dane z bazą danych zawierającą aktualne wersje
 oprogramowania
 3. System powiadamia użytkownika o dostępności aktualizacji
-Scenariusz alternatywny
-a) System nie znalazł aktualizacji
+
+__Scenariusz alternatywny:__
+* System nie znalazł aktualizacji
 Warunki końcowe:
 Sprawdzona została aktualność oprogramowania na urządzeniu
 
 ### 5.6 UC #006: Aktualizacja zainstalowanego oprogramowania
-Aktorzy:
+__Aktorzy:__  
 Użytkownik
-Cele:
+
+__Cele:__  
 Aktualizacja zainstalowanego oprogramowania
-Warunki początkowe:
+
+__Warunki początkowe:__  
 System znalazł aktualizacje zainstalowanego oprogramowania i oczekuje na potwierdzenie
 aktualizacji przez użytkownika
-Scenariusz bazowy:
+
+__Scenariusz bazowy:__
 1. Użytkownik za pomocą powiadomienia uruchamia interfejs aktualizacji
 2. System wyświetla listę programów wymagających aktualizacji
 3. Użytkownik uruchamia proces aktualizacji
 4. System pobiera nowe wersje plików instalacyjnych oprogramowania
 5. System aktualizuje oprogramowanie
-Scenariusz alternatywny
-b) Użytkownik nie uruchomił aktualizacji
+
+__Scenariusz alternatywny:__
+* Użytkownik nie uruchomił aktualizacji
 Warunki końcowe:
 Oprogramowanie zostało zaktualizowane
 
