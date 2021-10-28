@@ -1,7 +1,7 @@
 # TakeOff `v1.0.0`
 _Patryk Sablik_  
 _Mateusz Nawieśniak_  
-_Bartek Pisczur_
+_Bartłomiej Pisczur_
 
 ## 1 Wstęp
 ### 1.1 Cel dokumentu
