@@ -1,4 +1,4 @@
-# TakeOff `v1.0.2`
+# TakeOff `v1.0.0`
 _Patryk Sablik_  
 _Mateusz Nawieśniak_  
 _Bartłomiej Pisczur_
