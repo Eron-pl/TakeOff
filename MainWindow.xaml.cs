@@ -20,7 +20,6 @@ namespace TakeOff
         public MainWindow()
         {
             InitializeComponent();
-            //hejka
         }
     }
 }
