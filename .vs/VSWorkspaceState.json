@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\bin\\Debug",
+    "\\obj",
+    "\\obj\\Debug",
+    "\\obj\\Debug\\net5.0-windows"
   ],
-  "SelectedNode": "\\D:\\Patryk\\Studia\\io\\Projekt\\TakeOff",
+  "SelectedNode": "\\TakeOff.sln",
   "PreviewInSolutionExplorer": false
 }
