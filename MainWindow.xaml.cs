@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TakeOff.ViewModels;
 
 namespace TakeOff
 {
@@ -20,6 +21,50 @@ namespace TakeOff
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new MainViewModel();
+        }
+
+        //Przyciski do zmiany okien
+        private void DownloadView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new DownloadViewModel();
+        }
+
+        private void InstallView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new InstallViewModel();
+        }
+
+        private void ConfigurationView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new ConfigurationViewModel();
+        }
+
+        private void HelpView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new HelpViewModel();
+        }
+
+        //Poruszanie programem na left-click 
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                this.DragMove();
+        }
+
+
+        //Wychodzenie z programu po kliknięciu 'X'
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+
+        //Minimalizacja programu po kliknięciu '_'
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+
+        {
+            this.WindowState = WindowState.Minimized;
         }
     }
 }
