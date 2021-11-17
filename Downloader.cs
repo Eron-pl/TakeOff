@@ -10,7 +10,7 @@ namespace TakeOff
 {
     class Downloader
     {
-        public static string FetchFilename(string url)
+        private static string FetchFilename(string url)
         {
             if (url.EndsWith("/"))
             {
@@ -21,11 +21,11 @@ namespace TakeOff
 
         public static void Download(string url, string location = @"C:\TakeOff Downloads\")
         {
-            //location = local path to where the file has to be saved (including name and extension)
+            //location = local path to where the file has to be saved
             //url = web url to direct file download
             WebClient client = new WebClient();
 
-            client.DownloadFile(url, location);
+            client.DownloadFile(url, location + FetchFilename(url));
             Debug.WriteLine($"Pobieram plik, po pobraniu będzie można go znaleźć w {location}");
         }
     }
