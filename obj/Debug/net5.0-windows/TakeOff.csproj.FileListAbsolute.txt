@@ -30,3 +30,4 @@ D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\DownloadView.
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\HelpView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\InstallView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\MainView.baml
+D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\TakeOff.csproj.AssemblyReference.cache

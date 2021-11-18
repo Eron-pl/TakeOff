@@ -26,6 +26,9 @@
         <DataTemplate x:Name="helpViewTemplate" DataType="{x:Type viewmodels:HelpViewModel}">
             <views:HelpView DataContext="{Binding}"/>
         </DataTemplate>
+        <DataTemplate x:Name="mainViewTemplate" DataType="{x:Type viewmodels:MainViewModel}">
+            <views:MainView DataContext="{Binding}"/>
+        </DataTemplate>
     </Window.Resources>
 
     <Border Background="#272537" CornerRadius="10">
