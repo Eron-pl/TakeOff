@@ -13,6 +13,7 @@
         Background="Transparent"
         AllowsTransparency="True" MouseDown="Window_MouseDown">
 
+    <!--Wiązania pomiędzy innymi okienkami programu-->
     <Window.Resources>
         <DataTemplate x:Name="downloadViewTemplate" DataType="{x:Type viewmodels:DownloadViewModel}">
             <views:DownloadView DataContext="{Binding}"/>
@@ -32,8 +33,8 @@
     </Window.Resources>
 
     <Border CornerRadius="20" Background="Transparent">
-
         <Grid>
+            <!--Definicja kolumn-->
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="95"/>
                 <ColumnDefinition/>
@@ -41,15 +42,16 @@
                 <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
 
+            <!--Definicja wierszy-->
             <Grid.RowDefinitions>
                 <RowDefinition Height="65"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <!-- Border i stack panel 'górnego paska' -->
             <Border Background="#fff" CornerRadius="10 10 0 0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
                 <StackPanel  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
             </Border>
-            
 
             <TextBlock Text="TakeOff"
                    VerticalAlignment="Center"
@@ -57,15 +59,17 @@
                    Foreground="Black"
                    FontSize="22"/>
 
+            <!--Border i stack panel 'lewego paska' -->
             <Border CornerRadius="0 0 0 10" Grid.Row="1" Grid.Column="0" Background="#fff">
-            <StackPanel Grid.Row="1" Grid.Column="0">
-                <Button Height="50" Margin="10 30" Content="Download" Click="DownloadView_Clicked"></Button>
-                <Button Height="50" Margin="10 30" Content="Install" Click="InstallView_Clicked"></Button>
-                <Button Height="50" Margin="10 30" Content="Configuration" Click="ConfigurationView_Clicked"></Button>
-                <Button Height="50" Margin="10 30" Content="Help" Click="HelpView_Clicked"></Button>
-            </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="0">
+                    <Button Height="50" Margin="10 30" Content="Download" Click="DownloadView_Clicked"></Button>
+                    <Button Height="50" Margin="10 30" Content="Install" Click="InstallView_Clicked"></Button>
+                    <Button Height="50" Margin="10 30" Content="Configuration" Click="ConfigurationView_Clicked"></Button>
+                    <Button Height="50" Margin="10 30" Content="Help" Click="HelpView_Clicked"></Button>
+                </StackPanel>
             </Border>
 
+            <!--Przycisk do zamykania okna-->
             <Button Grid.Column="3" 
                     Background="Transparent" 
                     Content="x"
@@ -76,6 +80,7 @@
                     BorderBrush="#1d1b29" Click="CloseButton_Click">
             </Button>
 
+            <!--Przycisk do minimalizacji okna-->
             <Button Grid.Column="2" 
                     Background="Transparent" 
                     Content="__"
@@ -86,10 +91,8 @@
                     BorderBrush="#1d1b29" Click="MinimizeButton_Click">
             </Button>
 
-
+            <!--Deklaracja obszaru na którym zmieniają się okna contentu-->
             <ContentControl Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="4"  Content="{Binding}"></ContentControl>
         </Grid>
-
-
     </Border>
 </Window>
