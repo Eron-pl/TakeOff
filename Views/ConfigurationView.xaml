@@ -6,7 +6,9 @@
              xmlns:local="clr-namespace:TakeOff.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-        <Label Content="Okno ustawieniami, exportem, importem danych" FontSize="30" Margin="30 30 0 0" Foreground="White"></Label>
-    </Grid>
+    <Border CornerRadius="0 0 10 0" Background="#f5f5f5">
+        <Grid>
+            <Label Content="Okno konfiguracji" FontSize="30" Margin="30 30 0 0" Foreground="#303030"></Label>
+        </Grid>
+    </Border>
 </UserControl>
