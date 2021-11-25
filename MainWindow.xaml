@@ -31,40 +31,46 @@
         </DataTemplate>
     </Window.Resources>
 
-    <Border Background="#272537" CornerRadius="10">
+    <Border CornerRadius="20" Background="Transparent">
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="95"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="80"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
+                <RowDefinition Height="65"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <Border Background="#fff" CornerRadius="10 10 0 0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+                <StackPanel  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
+            </Border>
+            
 
             <TextBlock Text="TakeOff"
                    VerticalAlignment="Center"
                    HorizontalAlignment="Center"
-                   Foreground="White"
+                   Foreground="Black"
                    FontSize="22"/>
 
+            <Border CornerRadius="0 0 0 10" Grid.Row="1" Grid.Column="0" Background="#fff">
             <StackPanel Grid.Row="1" Grid.Column="0">
                 <Button Height="50" Margin="10 30" Content="Download" Click="DownloadView_Clicked"></Button>
                 <Button Height="50" Margin="10 30" Content="Install" Click="InstallView_Clicked"></Button>
                 <Button Height="50" Margin="10 30" Content="Configuration" Click="ConfigurationView_Clicked"></Button>
                 <Button Height="50" Margin="10 30" Content="Help" Click="HelpView_Clicked"></Button>
             </StackPanel>
+            </Border>
 
             <Button Grid.Column="3" 
                     Background="Transparent" 
-                    Content="X"
+                    Content="x"
                     FontSize="26"
-                    Foreground="DarkRed"
+                    Foreground="#303030"
                     Name="CloseButton" 
                     BorderThickness="0"
                     BorderBrush="#1d1b29" Click="CloseButton_Click">
@@ -74,7 +80,7 @@
                     Background="Transparent" 
                     Content="__"
                     FontSize="26"
-                    Foreground="DarkOrange"
+                    Foreground="#303030"
                     Name="MinimizeButton" 
                     BorderThickness="0"
                     BorderBrush="#1d1b29" Click="MinimizeButton_Click">
