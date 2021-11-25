@@ -59,8 +59,6 @@ zawsze łatwy i szybki dostęp do nich. Na środku będzie treść programu, w k
 zakładce treść będzie się różnić.
 
 ## 3 Architektura programu
-![Architektura programu](https://i.ibb.co/JnVPJj4/diagram-relacja-uslug.png)
-
 Program współpracuje z systemem - instaluje na niego aplikacje, ich aktualizacje
 oraz dokonuje na nim skanów w celu uzyskania informacji na temat posiadanych
 przez użytkownika aplikacji. Za pośrednictwem internetu będzie sprawdzał oraz
