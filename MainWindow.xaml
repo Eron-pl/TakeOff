@@ -18,8 +18,8 @@
         <DataTemplate x:Name="downloadViewTemplate" DataType="{x:Type viewmodels:DownloadViewModel}">
             <views:DownloadView DataContext="{Binding}"/>
         </DataTemplate>
-        <DataTemplate x:Name="installViewTemplate" DataType="{x:Type viewmodels:InstallViewModel}">
-            <views:InstallView DataContext="{Binding}"/>
+        <DataTemplate x:Name="packViewTemplate" DataType="{x:Type viewmodels:PackViewModel}">
+            <views:PackView DataContext="{Binding}"/>
         </DataTemplate>
         <DataTemplate x:Name="configurationViewTemplate" DataType="{x:Type viewmodels:ConfigurationViewModel}">
             <views:ConfigurationView DataContext="{Binding}"/>
@@ -61,11 +61,19 @@
 
             <!--Border i stack panel 'lewego paska' -->
             <Border CornerRadius="0 0 0 10" Grid.Row="1" Grid.Column="0" Background="#fff">
-                <StackPanel Grid.Row="1" Grid.Column="0">
-                    <Button Height="50" Margin="10 30" Content="Download" Click="DownloadView_Clicked"></Button>
-                    <Button Height="50" Margin="10 30" Content="Install" Click="InstallView_Clicked"></Button>
-                    <Button Height="50" Margin="10 30" Content="Configuration" Click="ConfigurationView_Clicked"></Button>
-                    <Button Height="50" Margin="10 30" Content="Help" Click="HelpView_Clicked"></Button>
+                <StackPanel Margin="0 35 0 0" Grid.Row="1" Grid.Column="0">
+                    <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="DownloadView_Clicked">
+                        <Image Height="25" Source="Assets/tray-arrow-down.png"/>
+                    </Button>
+                    <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="PackView_Clicked">
+                        <Image Height="25" Source="Assets/animation.png"/>
+                    </Button>
+                    <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20"  Click="ConfigurationView_Clicked">
+                        <Image Height="25" Source="Assets/export.png"/>
+                    </Button>
+                    <Button Height="30" Background="Transparent" BorderBrush="Transparent" Margin="0 75 0 0" Click="HelpView_Clicked">
+                        <Image Height="25" Source="Assets/help-circle-outline.png"/>
+                    </Button>
                 </StackPanel>
             </Border>
 

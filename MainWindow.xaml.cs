@@ -30,14 +30,14 @@ namespace TakeOff
             DataContext = new DownloadViewModel();
         }
 
-        private void InstallView_Clicked(object sender, RoutedEventArgs e)
-        {
-            DataContext = new InstallViewModel();
-        }
-
         private void ConfigurationView_Clicked(object sender, RoutedEventArgs e)
         {
             DataContext = new ConfigurationViewModel();
+        }
+
+        private void PackView_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new PackViewModel();
         }
 
         private void HelpView_Clicked(object sender, RoutedEventArgs e)

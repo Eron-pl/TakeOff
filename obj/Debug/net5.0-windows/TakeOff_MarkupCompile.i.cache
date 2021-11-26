@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\Patryk\Studia\io\Projekt\TakeOff\App.xaml
-6-1971634281
+6-1926595309
 
-15-1420587978
+151753589943
 193-1891726104
-MainWindow.xaml;Views\ConfigurationView.xaml;Views\DownloadView.xaml;Views\HelpView.xaml;Views\InstallView.xaml;Views\MainView.xaml;
+MainWindow.xaml;Views\ConfigurationView.xaml;Views\DownloadView.xaml;Views\HelpView.xaml;Views\MainView.xaml;Views\PackView.xaml;
 
-True
+False
 

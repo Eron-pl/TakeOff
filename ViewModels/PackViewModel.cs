@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TakeOff.ViewModels
 {
-    public class InstallViewModel
+    class PackViewModel
     {
     }
 }
