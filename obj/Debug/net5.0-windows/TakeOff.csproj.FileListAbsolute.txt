@@ -22,11 +22,11 @@ D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\TakeOff.genruntimec
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\ConfigurationView.g.cs
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\DownloadView.g.cs
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\HelpView.g.cs
-D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\InstallView.g.cs
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\MainView.g.cs
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\ConfigurationView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\DownloadView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\HelpView.baml
-D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\InstallView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\MainView.baml
+D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\PackView.g.cs
+D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\PackView.baml

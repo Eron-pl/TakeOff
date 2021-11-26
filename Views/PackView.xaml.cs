@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace TakeOff.Views
 {
     /// <summary>
-    /// Logika interakcji dla klasy InstallView.xaml
+    /// Logika interakcji dla klasy PackView.xaml
     /// </summary>
-    public partial class InstallView : UserControl
+    public partial class PackView : UserControl
     {
-        public InstallView()
+        public PackView()
         {
             InitializeComponent();
         }
