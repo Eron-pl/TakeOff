@@ -30,3 +30,6 @@ D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\HelpView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\MainView.baml
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\PackView.g.cs
 D:\Patryk\Studia\io\Projekt\TakeOff\obj\Debug\net5.0-windows\Views\PackView.baml
+D:\Patryk\Studia\io\Projekt\TakeOff\bin\Debug\net5.0-windows\Assets\Programs.json
+D:\Patryk\Studia\io\Projekt\TakeOff\bin\Debug\net5.0-windows\Assets\Program icons\chrome-icon.png
+D:\Patryk\Studia\io\Projekt\TakeOff\bin\Debug\net5.0-windows\Assets\Program icons\mozilla-icon.png
