@@ -1,0 +1,43 @@
+[
+  {
+    "Name": "Mozilla Firefox",
+    "Version": "94.0",
+    "DownloadLink": "https://cdn.stubdownloader.services.mozilla.com/builds/firefox-stub/pl/win/850e814dc9edea0adcec129dd845aa34d78fa8ba4f06b9ced50841a20ab1acba/Firefox%20Installer.exe",
+    "ImagePath": "Assets/Program icons/mozilla-icon.png"
+  },
+
+  {
+    "Name": "Google Chrome",
+    "Version": "96.0.4664.45",
+    "DownloadLink": "https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B543DA64D-001F-EB17-CE35-CA1BE6DAA58F%7D%26lang%3Dpl%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-stable-statsdef_1%26brand%3DYTUH%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe",
+    "ImagePath": "Assets/Program icons/chrome-icon.png"
+  },
+
+  {
+    "Name": "Discord",
+    "Version": "1.0.9003",
+    "DownloadLink": "https://dl.discordapp.net/distro/app/stable/win/x86/1.0.9003/DiscordSetup.exe",
+    "ImagePath": "Assets/Program icons/discord-icon.png"
+  },
+
+  {
+    "Name": "CCleaner",
+    "Version": "5.87.9306",
+    "DownloadLink": "https://bits.avcdn.net/productfamily_CCLEANER/insttype_FREE/platform_WIN_PIR/installertype_ONLINE/build_RELEASE/cookie_mmm_ccl_003_999_a5k_m",
+    "ImagePath": "Assets/Program icons/ccleaner-icon.png"
+  },
+
+  {
+    "Name": "WinRAR",
+    "Version": "6.02",
+    "DownloadLink": "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602pl.exe",
+    "ImagePath": "Assets/Program icons/winrar-icon.png"
+  },
+
+  {
+    "Name": "Gimp",
+    "Version": "2.10.28",
+    "DownloadLink": "https://mirror.umd.edu/gimp/gimp/v2.10/windows/gimp-2.10.28-setup.exe",
+    "ImagePath": "Assets/Program icons/gimp-icon.png"
+  }
+]
