@@ -148,7 +148,6 @@
                             <BitmapImage UriSource="\Assets\Program icons\ccleaner-icon.png" />
                         </Image.Source>
                     </Image>
-
                     <Label Style="{StaticResource Title}">CCleaner</Label>
                     <Label Style="{StaticResource Version}">Ver. 23451.55</Label>
                 </StackPanel>
