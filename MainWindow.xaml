@@ -53,26 +53,22 @@
                 <StackPanel  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
             </Border>
 
-            <TextBlock Text="TakeOff"
-                   VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   Foreground="Black"
-                   FontSize="22"/>
+            <Image Source="Assets/TakeOff_logo.png"/>
 
             <!--Border i stack panel 'lewego paska' -->
             <Border CornerRadius="0 0 0 10" Grid.Row="1" Grid.Column="0" Background="#fff">
                 <StackPanel Margin="0 35 0 0" Grid.Row="1" Grid.Column="0">
                     <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="DownloadView_Clicked">
-                        <Image Height="25" Source="Assets/tray-arrow-down.png"/>
+                        <Image Height="25" Source="Assets/UI icons/tray-arrow-down.png"/>
                     </Button>
                     <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="PackView_Clicked">
-                        <Image Height="25" Source="Assets/animation.png"/>
+                        <Image Height="25" Source="Assets/UI icons/animation.png"/>
                     </Button>
                     <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20"  Click="ConfigurationView_Clicked">
-                        <Image Height="25" Source="Assets/export.png"/>
+                        <Image Height="25" Source="Assets/UI icons/export.png"/>
                     </Button>
                     <Button Height="30" Background="Transparent" BorderBrush="Transparent" Margin="0 75 0 0" Click="HelpView_Clicked">
-                        <Image Height="25" Source="Assets/help-circle-outline.png"/>
+                        <Image Height="25" Source="Assets/UI icons/help-circle-outline.png"/>
                     </Button>
                 </StackPanel>
             </Border>

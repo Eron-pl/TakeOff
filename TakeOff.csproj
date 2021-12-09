@@ -10,22 +10,60 @@
     <None Remove="Assets\animation.png" />
     <None Remove="Assets\export.png" />
     <None Remove="Assets\help-circle-outline.png" />
+    <None Remove="Assets\Program icons\ccleaner-icon.png" />
+    <None Remove="Assets\Program icons\chrome-icon.png" />
+    <None Remove="Assets\Program icons\discord-icon.png" />
+    <None Remove="Assets\Program icons\gimp-icon.png" />
+    <None Remove="Assets\Program icons\mozilla-icon.png" />
+    <None Remove="Assets\Program icons\winrar-icon.png" />
+    <None Remove="Assets\TakeOff_logo.png" />
     <None Remove="Assets\tray-arrow-down.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\animation.png">
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Program icons\ccleaner-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\export.png">
+    <Resource Include="Assets\Program icons\chrome-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\help-circle-outline.png">
+    <Resource Include="Assets\Program icons\discord-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Assets\tray-arrow-down.png">
+    <Resource Include="Assets\Program icons\gimp-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\Program icons\mozilla-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Program icons\winrar-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\TakeOff_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\UI icons\animation.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\UI icons\export.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\UI icons\help-circle-outline.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\UI icons\tray-arrow-down.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Assets\Programs.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
