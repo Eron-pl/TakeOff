@@ -8,10 +8,10 @@ namespace TakeOff.Resources
 {
     class Programs
     {
-        public string Name { get; }
-        public string Version { get; }
-        public string DownloadLink { get; }
-        public string ImagePath { get; }
+        public string Name { get; set; }
+        public string Version { get; set; }
+        public string DownloadLink { get; set; }
+        public string ImagePath { get; set; }
 
 
         // DO ZROBIENIA

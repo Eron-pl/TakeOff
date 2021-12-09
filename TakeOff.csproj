@@ -21,6 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Assets\Program icons\ccleaner-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>

@@ -65,14 +65,9 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Column="0" Grid.Row="0">
-                    <Image>
-                        <Image.Source>
-                            <BitmapImage UriSource="\Assets\Program icons\mozilla-icon.png" />
-                        </Image.Source>
-                    </Image>
-
-                    <Label Style="{StaticResource Title}">Firefox</Label>
-                    <Label Style="{StaticResource Version}">Ver. 2.5.55.3</Label>
+                    <Image Name="program1_Image"/>
+                    <Label Name="program1_Name" Style="{StaticResource Title}"></Label>
+                    <Label Name="program1_Version" Style="{StaticResource Version}"> </Label>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20">
@@ -91,14 +86,9 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Column="0" Grid.Row="0">
-                    <Image>
-                        <Image.Source>
-                            <BitmapImage UriSource="\Assets\Program icons\chrome-icon.png" />
-                        </Image.Source>
-                    </Image>
-
-                    <Label Style="{StaticResource Title}">Chrome</Label>
-                    <Label Style="{StaticResource Version}">Ver. 22.74.3</Label>
+                    <Image Name="program2_Image"/>
+                    <Label Name="program2_Name" Style="{StaticResource Title}"></Label>
+                    <Label Name="program2_Version" Style="{StaticResource Version}"></Label>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20">
@@ -117,14 +107,9 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Column="0" Grid.Row="0">
-                    <Image>
-                        <Image.Source>
-                            <BitmapImage UriSource="\Assets\Program icons\discord-icon.png" />
-                        </Image.Source>
-                    </Image>
-
-                    <Label Style="{StaticResource Title}">Discord</Label>
-                    <Label Style="{StaticResource Version}">Ver. 3.6 preview</Label>
+                    <Image Name="program3_Image"/>
+                    <Label Name="program3_Name" Style="{StaticResource Title}"></Label>
+                    <Label Name="program3_Version" Style="{StaticResource Version}"></Label>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20">
@@ -143,13 +128,9 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Column="0" Grid.Row="0">
-                    <Image>
-                        <Image.Source>
-                            <BitmapImage UriSource="\Assets\Program icons\ccleaner-icon.png" />
-                        </Image.Source>
-                    </Image>
-                    <Label Style="{StaticResource Title}">CCleaner</Label>
-                    <Label Style="{StaticResource Version}">Ver. 23451.55</Label>
+                    <Image Name="program4_Image"/>
+                    <Label Name="program4_Name" Style="{StaticResource Title}"></Label>
+                    <Label Name="program4_Version" Style="{StaticResource Version}"></Label>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20">
@@ -168,14 +149,9 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Column="0" Grid.Row="0">
-                    <Image>
-                        <Image.Source>
-                            <BitmapImage UriSource="\Assets\Program icons\gimp-icon.png" />
-                        </Image.Source>
-                    </Image>
-
-                    <Label Style="{StaticResource Title}">Gimp</Label>
-                    <Label Style="{StaticResource Version}">Ver. ależ rozmazana ikonka</Label>
+                    <Image Name="program5_Image"/>
+                    <Label Name="program5_Name" Style="{StaticResource Title}"></Label>
+                    <Label Name="program5_Version" Style="{StaticResource Version}"></Label>
                 </StackPanel>
 
                 <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20">
@@ -194,14 +170,9 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Column="0" Grid.Row="0">
-                        <Image>
-                            <Image.Source>
-                                <BitmapImage UriSource="\Assets\Program icons\winrar-icon.png" />
-                            </Image.Source>
-                        </Image>
-
-                        <Label Style="{StaticResource Title}">WinRAR</Label>
-                        <Label Style="{StaticResource Version}">Ver. 1.0</Label>
+                    <Image Name="program6_Image"/>
+                    <Label Name="program6_Name" Style="{StaticResource Title}"></Label>
+                    <Label Name="program6_Version" Style="{StaticResource Version}"></Label>
                     </StackPanel>
 
                     <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20">
