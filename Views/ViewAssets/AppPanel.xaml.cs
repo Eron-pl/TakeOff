@@ -26,19 +26,14 @@ namespace TakeOff.Views.ViewAssets
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
         {
+            topPanel.Background = new SolidColorBrush(Color.FromRgb(122, 255, 133));
+        }
 
-            if (Convert.ToString(isChecked.Content) == "1")
-            {
-                xdxd.Content = "biale";
-                topPanel.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                isChecked.Content = "0";
-            }
-
-            xdxd.Content = "zielone";
-            topPanel.Background = new SolidColorBrush(Color.FromRgb(122, 255, 131));
-            isChecked.Content = "1";
+        private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            topPanel.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
         }
     }
 }

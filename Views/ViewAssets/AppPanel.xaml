@@ -46,8 +46,7 @@
             <RowDefinition Height="20" />
         </Grid.RowDefinitions>
         
-        <Label Visibility="Hidden" Name="isChecked">0</Label>
-        <Button Click="Button_Click" BorderThickness="0">
+        <ToggleButton Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"  BorderThickness="0">
         <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
             <Image>
                 <Image.Source>
@@ -58,7 +57,7 @@
             <Label Style="{StaticResource Title}" Name="xdxd">Title</Label>
             <Label Style="{StaticResource Version}">Version</Label>
         </StackPanel>
-        </Button>
+        </ToggleButton>
 
         <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20" Name="botPanel">
         </StackPanel>
