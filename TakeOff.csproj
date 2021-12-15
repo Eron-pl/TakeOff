@@ -17,7 +17,12 @@
     <None Remove="Assets\Program icons\mozilla-icon.png" />
     <None Remove="Assets\Program icons\winrar-icon.png" />
     <None Remove="Assets\TakeOff_logo.png" />
+    <None Remove="Assets\TakeOff_logo_mini.png" />
     <None Remove="Assets\tray-arrow-down.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,6 +45,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\TakeOff_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\TakeOff_logo_mini.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\UI icons\animation.png">
