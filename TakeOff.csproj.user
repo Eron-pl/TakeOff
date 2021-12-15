@@ -10,12 +10,18 @@
     <Compile Update="Views\PackView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\ViewAssets\AppPanel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\PackView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ViewAssets\AppPanel.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

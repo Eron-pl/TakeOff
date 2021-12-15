@@ -23,6 +23,8 @@ namespace TakeOff.Views
         public DownloadView()
         {
             InitializeComponent();
+
+            this.DwnldContentControl.Content = new ViewAssets.AppPanel();
         }
     }
 }
