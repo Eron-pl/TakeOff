@@ -13,6 +13,7 @@ namespace TakeOff.Views
         {
             InitializeComponent();
 
+
             string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
             Programs[] programs = JsonConvert.DeserializeObject<Programs[]>(programsDataSerialized);
 
