@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TakeOff.Resources
 {
-    class Programs
+    class Program
     {
         public string Name { get; set; }
         public string Version { get; set; }
