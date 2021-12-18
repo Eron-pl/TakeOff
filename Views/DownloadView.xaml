@@ -8,9 +8,68 @@
              d:DesignHeight="450" d:DesignWidth="800"
              >
 
-    <Grid>
-        <ContentControl Name="DwnldContentControl" />
-    </Grid>
-    
+    <UserControl.Resources>
+        <Style TargetType="StackPanel">
+            <Setter Property="Background" Value="#ffffff" />
+            <Setter Property="Width" Value="1500" />
+            <Setter Property="Height" Value="180" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="Title">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="16" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="Version">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="#999999" />
+            <Setter Property="FontSize" Value="11" />
+        </Style>
+
+        <Style TargetType="Image">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Height" Value="60" />
+            <Setter Property="Width" Value="60" />
+            <Setter Property="Margin" Value="0 15 0 20" />
+        </Style>
+
+    </UserControl.Resources>
+
+    <Border CornerRadius="0 0 10 0" Background="#f5f5f5">
+        <ScrollViewer>
+        <ItemsControl Name="icProgramsList" Margin="30 30 0 0">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Grid Height="200" Width="200" Name="wrapGrid" Margin="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="180" />
+                            <RowDefinition Height="20" />
+                        </Grid.RowDefinitions>
+                        <ToggleButton BorderThickness="0">
+                            <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
+                                <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
+                                <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
+                                <Label Style="{StaticResource Version}" Content="{Binding Version}"/>
+                            </StackPanel>
+                        </ToggleButton>
+                        <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20" Name="botPanel"></StackPanel>
+                    </Grid>
+
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+        </ScrollViewer>
+    </Border>
+
 
 </UserControl>
