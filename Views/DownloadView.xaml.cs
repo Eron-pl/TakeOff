@@ -17,12 +17,7 @@ namespace TakeOff.Views
 
             string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
             var programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
-
-            programs.Add(new Program());
             icProgramsList.ItemsSource = programs;
-
-            var wp = new WrapPanel();
-            
         }
     }
 }

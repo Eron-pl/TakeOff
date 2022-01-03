@@ -38,30 +38,32 @@
     </UserControl.Resources>
 
     <Border CornerRadius="0 0 10 0" Background="#f5f5f5">
+        
         <ScrollViewer>
-        <ItemsControl Name="icProgramsList" Margin="30 30 0 0">
+            <ItemsControl Name="icProgramsList" Margin="30 30 0 0">
             <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Grid Height="200" Width="200" Name="wrapGrid" Margin="10">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition />
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="180" />
-                            <RowDefinition Height="20" />
-                        </Grid.RowDefinitions>
-                        <ToggleButton BorderThickness="0">
-                            <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
-                                <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
-                                <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
-                                <Label Style="{StaticResource Version}" Content="{Binding Version}"/>
-                            </StackPanel>
-                        </ToggleButton>
-                        <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20" Name="botPanel"></StackPanel>
-                    </Grid>
-
-                </DataTemplate>
+                    <DataTemplate>
+                        <Grid Height="200" Width="200" Name="wrapGrid" Margin="10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="180" />
+                                <RowDefinition Height="20" />
+                            </Grid.RowDefinitions>
+                            <ToggleButton BorderThickness="0">
+                                <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
+                                    <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
+                                    <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
+                                    <Label Style="{StaticResource Version}" Content="{Binding Version}"/>
+                                </StackPanel>
+                            </ToggleButton>
+                            <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20" Name="botPanel"></StackPanel>
+                        </Grid>
+                    </DataTemplate>
             </ItemsControl.ItemTemplate>
+            
+            
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
