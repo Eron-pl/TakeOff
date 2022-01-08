@@ -50,16 +50,42 @@
                             <RowDefinition Height="180" />
                             <RowDefinition Height="20" />
                         </Grid.RowDefinitions>
-                        <ToggleButton BorderThickness="0">
+
+                        <!-- Button styles -->
+                            <ToggleButton>
+                                <ToggleButton.Style>
+                                    <Style TargetType="{x:Type ToggleButton}">
+                                        <Setter Property="Template">
+                                            <Setter.Value>
+                                                <ControlTemplate TargetType="ToggleButton">
+                                                    <Border BorderBrush="{TemplateBinding BorderBrush}" 
+                                                            Background="{TemplateBinding Background}">
+                                                        <ContentPresenter HorizontalAlignment="Center"                  
+                                                                          VerticalAlignment="Center"/>
+                                                    </Border>
+                                                </ControlTemplate>
+                                            </Setter.Value>
+                                        </Setter>
+
+                                        <Setter Property="Background" Value="#ffffff" />
+
+                                        <Style.Triggers>
+                                            <Trigger Property="IsChecked" Value="True">
+                                                <Setter Property="Background" Value="#e09546" />
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </ToggleButton.Style>
                             <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
                                 <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
                                 <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
                                 <Label Style="{StaticResource Version}" Content="{Binding Version}"/>
                             </StackPanel>
                         </ToggleButton>
-                        <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20" Name="botPanel"></StackPanel>
-                    </Grid>
 
+                            <StackPanel Grid.Row="1" Grid.Column="0" Background="#3d3d3d" Height="20" Name="botPanel"></StackPanel>
+                        </Grid>
+                    
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
             <ItemsControl.ItemsPanel>

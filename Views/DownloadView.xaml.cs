@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using TakeOff.Resources;
 using System.Windows;
 using System.Collections.Generic;
+using System.Windows.Media;
 
 namespace TakeOff.Views
 {
@@ -18,11 +19,7 @@ namespace TakeOff.Views
             string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
             var programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
 
-            programs.Add(new Program());
             icProgramsList.ItemsSource = programs;
-
-            var wp = new WrapPanel();
-            
         }
     }
 }

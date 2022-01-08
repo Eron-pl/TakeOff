@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,11 +30,13 @@ namespace TakeOff.Views.ViewAssets
         private void ToggleButton_Checked(object sender, RoutedEventArgs e)
         {
             topPanel.Background = new SolidColorBrush(Color.FromRgb(122, 255, 133));
+            Debug.WriteLine("green");
         }
 
         private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
         {
             topPanel.Background = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            Debug.WriteLine("white");
         }
     }
 }
