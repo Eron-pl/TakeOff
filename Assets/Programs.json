@@ -53,5 +53,12 @@
     "Version": "1.63",
     "DownloadLink": "https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe",
     "ImagePath": "/Assets/Program icons/visualstudiocode-icon.png"
+  },
+
+  {
+    "Name": "Libre Office",
+    "Version": "7.2.5",
+    "DownloadLink": "https://ftp.halifax.rwth-aachen.de/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi",
+    "ImagePath": "/Assets/Program icons/libreoffice-icon.png"
   }
 ]

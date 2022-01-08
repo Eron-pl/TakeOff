@@ -14,6 +14,7 @@
     <None Remove="Assets\Program icons\chrome-icon.png" />
     <None Remove="Assets\Program icons\discord-icon.png" />
     <None Remove="Assets\Program icons\gimp-icon.png" />
+    <None Remove="Assets\Program icons\libreoffice-icon.png" />
     <None Remove="Assets\Program icons\mozilla-icon.png" />
     <None Remove="Assets\Program icons\utorrent-icon.png" />
     <None Remove="Assets\Program icons\visualstudiocode-icon.png" />
@@ -24,6 +25,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Program icons\libreoffice-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Program icons\visualstudiocode-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
