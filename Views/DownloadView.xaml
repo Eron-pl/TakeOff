@@ -79,7 +79,7 @@
                        Grid.Row="0"/>
             
             <!-- PRZYCISK POBIERANIA -->
-                <Button Name="DwnldBtn"
+            <Button Name="DwnldBtn"
                     Grid.Column="1"
                     Grid.Row="0"
                     VerticalAlignment="Center"
@@ -91,7 +91,8 @@
                     FontSize="15"
                     Background="#79CAF2"
                     Foreground="#1a1a1a">
-
+                <!-- roboczy kolor do ew. zmiany -->
+                
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="12" />
@@ -102,17 +103,18 @@
 
 
                 <ScrollViewer Grid.Row="1" Height="500">
-            <ItemsControl Name="icProgramsList"  >
+            <ItemsControl Name="icProgramsList" >
             <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Grid Height="200" Width="200" Name="wrapGrid" Margin="10">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="180" />
-                                <RowDefinition Height="20" />
-                            </Grid.RowDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="180" />
+                                    <RowDefinition Height="20" />
+                                </Grid.RowDefinitions>
+
                                 <ToggleButton BorderThickness="0">
                                     <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
                                         <Image Height="50" Width="50" Source="{Binding ImagePath}"/>

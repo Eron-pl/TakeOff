@@ -21,10 +21,10 @@ namespace TakeOff.Resources
         //    return;
         //}
 
-        //public void Download (string DownloadLink)
-        //{
-
-        //}
+        public void Download (string DownloadLink)
+        {
+            Downloader.Download(DownloadLink);
+        }
 
         //public void Install (string PathToFile)
         //{
