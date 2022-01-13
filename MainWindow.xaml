@@ -7,7 +7,7 @@
         xmlns:viewmodels="clr-namespace:TakeOff.ViewModels"
         xmlns:views="clr-namespace:TakeOff.Views"
         mc:Ignorable="d"
-        Height="600" Width="920"
+        Height="650" Width="1000"
         WindowStyle="None"
         ResizeMode="CanMinimize"
         Background="Transparent"
@@ -36,7 +36,7 @@
         <Grid>
             <!--Definicja kolumn-->
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="95"/>
+                <ColumnDefinition Width="65"/>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="80"/>
                 <ColumnDefinition Width="80"/>
@@ -44,7 +44,7 @@
 
             <!--Definicja wierszy-->
             <Grid.RowDefinitions>
-                <RowDefinition Height="65"/>
+                <RowDefinition Height="55"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
@@ -53,7 +53,8 @@
                 <StackPanel  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"/>
             </Border>
 
-            <Image Source="Assets/TakeOff_logo.png"/>
+            <!-- Logo -->
+            <Image Source="/Assets/TakeOff_logo_mini.png" Height="45" Width="45"/>
 
             <!--Border i stack panel 'lewego paska' -->
             <Border CornerRadius="0 0 0 10" Grid.Row="1" Grid.Column="0" Background="#fff">

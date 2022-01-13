@@ -39,5 +39,26 @@
     "Version": "6.02",
     "DownloadLink": "https://www.win-rar.com/fileadmin/winrar-versions/winrar/winrar-x64-602pl.exe",
     "ImagePath": "/Assets/Program icons/winrar-icon.png"
+  },
+
+  {
+    "Name": "uTorrent",
+    "Version": "3.5.5",
+    "DownloadLink": "https://download-lb.utorrent.com/uuid/d0e1309e-124f-4234-9bee-c7f0b6590a58",
+    "ImagePath": "/Assets/Program icons/utorrent-icon.png"
+  },
+
+  {
+    "Name": "Virtual Studio Code",
+    "Version": "1.63",
+    "DownloadLink": "https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe",
+    "ImagePath": "/Assets/Program icons/visualstudiocode-icon.png"
+  },
+
+  {
+    "Name": "Libre Office",
+    "Version": "7.2.5",
+    "DownloadLink": "https://ftp.halifax.rwth-aachen.de/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi",
+    "ImagePath": "/Assets/Program icons/libreoffice-icon.png"
   }
 ]

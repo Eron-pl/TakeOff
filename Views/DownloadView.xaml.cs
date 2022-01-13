@@ -4,41 +4,58 @@ using System.Windows.Media.Imaging;
 using System.IO;
 using Newtonsoft.Json;
 using TakeOff.Resources;
+using System.Windows;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace TakeOff.Views
 {
     public partial class DownloadView : UserControl
     {
+        
         public DownloadView()
         {
             InitializeComponent();
-
+            
+            // Wczytanie danych z pliku JSON
             string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
-            Programs[] programs = JsonConvert.DeserializeObject<Programs[]>(programsDataSerialized);
 
-            program1_Image.Source    = new BitmapImage(new Uri(programs[0].ImagePath, UriKind.Relative));
-            program1_Name.Content    = programs[0].Name;
-            program1_Version.Content = programs[0].Version;
+            // Deserializacja danych do listy zawierającej programy
+            var programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
 
-            program2_Image.Source    = new BitmapImage(new Uri(programs[1].ImagePath, UriKind.Relative));
-            program2_Name.Content    = programs[1].Name;
-            program2_Version.Content = programs[1].Version;
+            // Wczytanie programów do ItemControla (Binding)
+            icProgramsList.ItemsSource = programs;
 
-            program3_Image.Source    = new BitmapImage(new Uri(programs[2].ImagePath, UriKind.Relative));
-            program3_Name.Content    = programs[2].Name;
-            program3_Version.Content = programs[2].Version;
+            // Utworzenie event'u przy zmianie wartości w search box'ie
+            SearchBox.TextChanged += new TextChangedEventHandler( SearchBoxTextChanged );
 
-            program4_Image.Source    = new BitmapImage(new Uri(programs[3].ImagePath, UriKind.Relative));
-            program4_Name.Content    = programs[3].Name;
-            program4_Version.Content = programs[3].Version;
+        }
 
-            program5_Image.Source    = new BitmapImage(new Uri(programs[4].ImagePath, UriKind.Relative));
-            program5_Name.Content    = programs[4].Name;
-            program5_Version.Content = programs[4].Version;
+        // Obługa event'u przy zmianie wartości w search box'ie
+        private void SearchBoxTextChanged(object Sender, TextChangedEventArgs e)
+        {
+            // Wczytanie wszystkich danych programów
+            System.Diagnostics.Debug.WriteLine(SearchBox.Text.ToLowerInvariant());
+            string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
+            var programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
 
-            program6_Image.Source    = new BitmapImage(new Uri(programs[5].ImagePath, UriKind.Relative));
-            program6_Name.Content    = programs[5].Name;
-            program6_Version.Content = programs[5].Version;
+            // Filtrowanie zapytania z search box'a
+            // Jeśli puste to wyświetla wszystkie programy
+            if(SearchBox.Text == "")
+            {
+                icProgramsList.ItemsSource = programs;
+            } 
+            else 
+            {
+                // Tworzenie listy programów opartej na zapytaniu 
+                // Zapytanie szuka nazm programów, które mają w sobie treść z search box'a. Sprawdza oryginalne nazwy, warianty z dużymi i małymi literami
+                IEnumerable<Program> programsQuery = programs.Where(Program => Program.Name.Contains(SearchBox.Text) 
+                    || Program.Name.ToLowerInvariant().Contains(SearchBox.Text) 
+                    || Program.Name.ToUpperInvariant().Contains(SearchBox.Text));
+
+                // Wczytanie programów które pasują do zapytania do ItemControla 
+                icProgramsList.ItemsSource = programsQuery;
+            }
         }
     }
 }

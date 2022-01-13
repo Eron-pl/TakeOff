@@ -14,10 +14,23 @@
     <None Remove="Assets\Program icons\chrome-icon.png" />
     <None Remove="Assets\Program icons\discord-icon.png" />
     <None Remove="Assets\Program icons\gimp-icon.png" />
+    <None Remove="Assets\Program icons\libreoffice-icon.png" />
     <None Remove="Assets\Program icons\mozilla-icon.png" />
+    <None Remove="Assets\Program icons\utorrent-icon.png" />
+    <None Remove="Assets\Program icons\visualstudiocode-icon.png" />
     <None Remove="Assets\Program icons\winrar-icon.png" />
     <None Remove="Assets\TakeOff_logo.png" />
+    <None Remove="Assets\TakeOff_logo_mini.png" />
     <None Remove="Assets\tray-arrow-down.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Program icons\libreoffice-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Program icons\visualstudiocode-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -40,10 +53,16 @@
     <Resource Include="Assets\Program icons\mozilla-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Assets\Program icons\utorrent-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Program icons\winrar-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\TakeOff_logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\TakeOff_logo_mini.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\UI icons\animation.png">
