@@ -59,9 +59,37 @@
             <!--Border i stack panel 'lewego paska' -->
             <Border CornerRadius="0 0 0 10" Grid.Row="1" Grid.Column="0" Background="#fff">
                 <StackPanel Margin="0 35 0 0" Grid.Row="1" Grid.Column="0">
-                    <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="DownloadView_Clicked">
-                        <Image Height="25" Source="Assets/UI icons/tray-arrow-down.png"/>
-                    </Button>
+                    <StackPanel>
+                        <Button x:Name="downloadBtn" Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="DownloadView_Clicked">
+                            <Image Height="25" Source="Assets/UI icons/tray-arrow-down.png"/>
+                        </Button>
+                        <TextBox Panel.ZIndex="999" Width="50" Height="20" Background="Red" Opacity="0" Text="Some TextBox">
+                            <TextBox.Style>
+                                <Style TargetType="{x:Type TextBox}">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding ElementName=downloadBtn, Path=IsMouseOver}" Value="True">
+                                            <DataTrigger.EnterActions>
+                                                <BeginStoryboard >
+                                                    <Storyboard TargetProperty="Opacity" Duration="00:00:01" AutoReverse="False">
+                                                        <DoubleAnimation From="0" To="1" Duration="00:00:01"/>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </DataTrigger.EnterActions>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding ElementName=downloadBtn, Path=IsMouseOver}" Value="False">
+                                            <DataTrigger.EnterActions>
+                                                <BeginStoryboard >
+                                                    <Storyboard TargetProperty="Opacity" Duration="00:00:01" AutoReverse="False">
+                                                        <DoubleAnimation From="1" To="0" Duration="00:00:01"/>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </DataTrigger.EnterActions>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBox.Style>
+                        </TextBox>
+                    </StackPanel>
                     <Button Height="70" Background="Transparent" BorderBrush="Transparent" Margin="0 20" Click="PackView_Clicked">
                         <Image Height="25" Source="Assets/UI icons/animation.png"/>
                     </Button>
