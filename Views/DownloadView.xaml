@@ -43,7 +43,6 @@
             </Style.Triggers>
             <Setter Property="Visibility" Value="Hidden"/>
         </Style>
-
     </UserControl.Resources>
     
     <Border CornerRadius="0 0 10 0" Background="#f5f5f5">
@@ -90,8 +89,9 @@
                     Width="140"
                     Margin="0 0 45 0"
                     FontSize="15"
-                    Background="#79CAF2"
-                    Foreground="#1a1a1a">
+                    Background="#d6d6d6"
+                    Foreground="#1a1a1a"
+                    Visibility="Hidden">
                 <!-- roboczy kolor do ew. zmiany -->
                 
                 <Button.Resources>
@@ -99,7 +99,7 @@
                         <Setter Property="CornerRadius" Value="12" />
                     </Style>
                 </Button.Resources>
-                    Pobierz (28)
+                    Pobierz (0)
                 </Button>
 
 
@@ -116,7 +116,7 @@
                                     <RowDefinition Height="20" />
                                 </Grid.RowDefinitions>
 
-                                <ToggleButton Name="TglBtn" BorderThickness="0" IsChecked="{Binding isSelected, Mode=TwoWay}">
+                                <ToggleButton Name="TglBtn" BorderThickness="0" IsChecked="{Binding isSelected, Mode=TwoWay}" Checked="TglBtn_Checked" Unchecked="TglBtn_Unchecked">
                                     <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
                                         <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
                                         <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
