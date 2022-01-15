@@ -57,5 +57,18 @@ namespace TakeOff.Views
                 icProgramsList.ItemsSource = programsQuery;
             }
         }
+
+        //Obsługa przycisku pobierania
+        private void DwnldBtn_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (Program program in icProgramsList.Items)
+            {
+                //Jeżeli isSelected = true, pobierz program za pomocą .Download()
+                if(program.isSelected == true)
+                {
+                    program.Download();
+                }
+            }
+        }
     }
 }

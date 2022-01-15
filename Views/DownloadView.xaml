@@ -80,6 +80,7 @@
             
             <!-- PRZYCISK POBIERANIA -->
             <Button Name="DwnldBtn"
+                    Click="DwnldBtn_Click"
                     Grid.Column="1"
                     Grid.Row="0"
                     VerticalAlignment="Center"
@@ -115,7 +116,7 @@
                                     <RowDefinition Height="20" />
                                 </Grid.RowDefinitions>
 
-                                <ToggleButton BorderThickness="0">
+                                <ToggleButton Name="TglBtn" BorderThickness="0" IsChecked="{Binding isSelected, Mode=TwoWay}">
                                     <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
                                         <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
                                         <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
