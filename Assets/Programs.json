@@ -60,5 +60,97 @@
     "Version": "7.2.5",
     "DownloadLink": "https://ftp.halifax.rwth-aachen.de/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi",
     "ImagePath": "/Assets/Program icons/libreoffice-icon.png"
+  },
+
+  {
+    "Name": "Steam",
+    "Version": "API v020",
+    "DownloadLink": "https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe",
+    "ImagePath": "/Assets/Program icons/steam-icon.png"
+  },
+
+  {
+    "Name": "Spotify",
+    "Version": "10.10",
+    "DownloadLink": "https://download.scdn.co/SpotifySetup.exe",
+    "ImagePath": "/Assets/Program icons/spotify-icon.png"
+  },
+
+  {
+    "Name": "Atom",
+    "Version": "1.58.0",
+    "DownloadLink": "https://atom-installer.github.com/v1.58.0/AtomSetup-x64.exe?s=1627025639&ext=.exe",
+    "ImagePath": "/Assets/Program icons/atom-icon.png"
+  },
+
+  {
+    "Name": "Zoom",
+    "Version": "5.9.1",
+    "DownloadLink": "https://cdn.zoom.us/prod/5.9.1.2581/x64/ZoomInstaller.exe",
+    "ImagePath": "/Assets/Program icons/zoom-icon.png"
+  },
+
+  {
+    "Name": "Blender",
+    "Version": "3.0",
+    "DownloadLink": "https://mirrors.dotsrc.org/blender/release/Blender3.0/blender-3.0.0-windows-x64.msi",
+    "ImagePath": "/Assets/Program icons/blender-icon.png"
+  },
+
+  {
+    "Name": "Dropbox",
+    "Version": "139.4.4896",
+    "DownloadLink": "https://ftp.halifax.rwth-aachen.de/tdf/libreoffice/stable/7.2.5/win/x86_64/LibreOffice_7.2.5_Win_x64.msi",
+    "ImagePath": "/Assets/Program icons/dropbox-icon.png"
+  },
+
+  {
+    "Name": "Audacity",
+    "Version": "3.1.3",
+    "DownloadLink": "https://objects.githubusercontent.com/github-production-release-asset-2e65be/32921736/b96ccbe5-83a3-465e-bcb6-51b6728a7b8a?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220113T144226Z&X-Amz-Expires=300&X-Amz-Signature=9",
+    "ImagePath": "/Assets/Program icons/audacity-icon.png"
+  },
+
+  {
+    "Name": "TeamViewer",
+    "Version": "15.25",
+    "DownloadLink": "https://dl.teamviewer.com/download/version_15x/TeamViewer_Setup_x64.exe?utm_source=google&utm_medium=cpc&utm_campaign=restofeurope%7Cb%7Cpr%7C21%7Caug%7Cexact-brand-combi-download-sn%7Cfree%7Ct0%7C0&utm_content=exact_brand_download&utm_term=teamviewer+download&gclid=Cj0KCQiAuP-OBhDqARIsAD4XHpfbobUPb",
+    "ImagePath": "/Assets/Program icons/teamviewer-icon.png"
+  },
+
+  {
+    "Name": "Filezilla",
+    "Version": "3.57.0",
+    "DownloadLink": "https://download.filezilla-project.org/client/FileZilla_3.57.0_win64_sponsored2-setup.exe",
+    "ImagePath": "/Assets/Program icons/filezilla-icon.png"
+  },
+
+  {
+    "Name": "iTunes",
+    "Version": "12.10.11",
+    "DownloadLink": "https://secure-appldnld.apple.com/itunes12/001-80053-20210422-E8A3B28C-A3B2-11EB-BE07-CE1B67FC6302/iTunes64Setup.exe",
+    "ImagePath": "/Assets/Program icons/itunes-icon.png"
+  },
+
+  {
+    "Name": "Bandicam",
+    "Version": "4.0",
+    "DownloadLink": "https://dl.bandicam.com/bdcamsetup.exe",
+    "ImagePath": "/Assets/Program icons/bandicam-icon.png"
+  },
+
+  {
+    "Name": "Battle.net",
+    "Version": "N/A",
+    "DownloadLink": "https://eu.battle.net/download/getInstaller?os=win&installer=Battle.net-Setup.exe&id=341076030.1642084887",
+    "ImagePath": "/Assets/Program icons/battlenet-icon.png"
+  },
+
+  {
+    "Name": "Inkscape",
+    "Version": "1.1.1",
+    "DownloadLink": "https://media.inkscape.org/dl/resources/file/inkscape-1.1.1_2021-09-20_3bf5ae0d25-x64.exe",
+    "ImagePath": "/Assets/Program icons/inkscape-icon.png"
   }
+
 ]
