@@ -45,8 +45,8 @@ włącza nowy (lub po sformatowaniu) sprzęt i chce szybko zainstalować wszystk
 programy jakich potrzebuje. Cały proces ma byc szybki jak odlot samolotu.
 
 ### 2.2 Użyte Technologie
-System stworzony zostanie w środowisku .NET Core, w języku C# i jego miejscem docelowym będą komputery
-stacjonarne i przenośne. Do zapisu oraz odczytu danych będzie wykorzystywany format pliku JSON
+System stworzony zostanie w środowisku **.NET Core**, w języku **C#** i jego miejscem docelowym będą komputery
+stacjonarne i przenośne. Do zapisu oraz odczytu danych będzie wykorzystywany format pliku **JSON**
 
 ### 2.3 Zarys interfejsu
 Planowany interfejs ma być łatwy oraz intuicyjny dla użytkownika, ma ułatwić mu
