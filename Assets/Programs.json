@@ -49,7 +49,7 @@
   },
 
   {
-    "Name": "Virtual Studio Code",
+    "Name": "Visual Studio Code",
     "Version": "1.63",
     "DownloadLink": "https://az764295.vo.msecnd.net/stable/899d46d82c4c95423fb7e10e68eba52050e30ba3/VSCodeUserSetup-x64-1.63.2.exe",
     "ImagePath": "/Assets/Program icons/visualstudiocode-icon.png"

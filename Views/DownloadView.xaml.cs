@@ -8,23 +8,22 @@ using System.Windows;
 using System.Collections.Generic;
 using System.Linq;
 using System.ComponentModel;
+using System.Collections;
 
 namespace TakeOff.Views
 {
     public partial class DownloadView : UserControl
     {
+        private readonly List<Program> _programs;
+
         public DownloadView()
         {
             InitializeComponent();
             
             // Wczytanie danych z pliku JSON
             string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
-
-            // Deserializacja danych do listy zawierającej programy
-            var programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
-
-            // Wczytanie programów do ItemControla (Binding)
-            icProgramsList.ItemsSource = programs;
+            _programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
+            icProgramsList.ItemsSource = _programs;
 
             // Utworzenie event'u przy zmianie wartości w search box'ie
             SearchBox.TextChanged += new TextChangedEventHandler( SearchBoxTextChanged );
@@ -33,27 +32,28 @@ namespace TakeOff.Views
         // Obługa event'u przy zmianie wartości w search box'ie
         private void SearchBoxTextChanged(object Sender, TextChangedEventArgs e)
         {
-            // Wczytanie wszystkich danych programów
-            System.Diagnostics.Debug.WriteLine(SearchBox.Text.ToLowerInvariant());
-            string programsDataSerialized = File.ReadAllText(@"Assets/Programs.json");
-            var programs = JsonConvert.DeserializeObject<List<Program>>(programsDataSerialized);
+            
 
-            // Filtrowanie zapytania z search box'a
-            // Jeśli puste to wyświetla wszystkie programy
-            if(SearchBox.Text == "")
+            if (SearchBox.Text == "")
             {
-                icProgramsList.ItemsSource = programs;
+                foreach (var program in _programs)
+                {
+                    program.Visibility = "visible";
+                }
+               // icProgramsList.ItemsSource = _programs;
             } 
             else 
             {
                 // Tworzenie listy programów opartej na zapytaniu 
-                // Zapytanie szuka nazm programów, które mają w sobie treść z search box'a. Sprawdza oryginalne nazwy, warianty z dużymi i małymi literami
-                IEnumerable<Program> programsQuery = programs.Where(Program => Program.Name.Contains(SearchBox.Text) 
-                    || Program.Name.ToLowerInvariant().Contains(SearchBox.Text) 
-                    || Program.Name.ToUpperInvariant().Contains(SearchBox.Text));
+                var programsQuery = _programs.Where(Program => !Program.Name.ToLower().Contains(SearchBox.Text.ToLower()));
+                //var programsQuery2 = _programs.Where(Program => Program.Name.ToLower().Contains(SearchBox.Text.ToLower()));
 
-                // Wczytanie programów które pasują do zapytania do ItemControla 
-                icProgramsList.ItemsSource = programsQuery;
+
+                foreach (var program in programsQuery)
+                {
+                    program.Visibility= "collapsed";
+                }
+                //icProgramsList.ItemsSource = programsQuery2;
             }
         }
 
@@ -63,7 +63,7 @@ namespace TakeOff.Views
             foreach (Program program in icProgramsList.Items)
             {
                 //Jeżeli isSelected = true, pobierz program za pomocą .Download()
-                if(program.isSelected == true)
+                if(program.IsSelected == true)
                 {
                     program.Download();
                 }
@@ -72,6 +72,7 @@ namespace TakeOff.Views
 
         // Zliczanie zaznaczonych paneli
         int checkedCount = 0;
+ 
         private void TglBtn_Checked(object sender, RoutedEventArgs e)
         {
             checkedCount += 1;
