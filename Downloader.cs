@@ -10,7 +10,7 @@ namespace TakeOff
 {
     public class Downloader
     {
-        private static string FetchFilename(string url)
+        public static string FetchFilename(string url)
         {
             if (url.EndsWith("/"))
             {

@@ -33,6 +33,11 @@ namespace TakeOff.Resources
             Downloader.Download(DownloadLink);
         }
 
+        public void Install()
+        {
+            Installer.Install(Downloader.FetchFilename(DownloadLink));
+        }
+
         public void DownloadTo(string path)
         {
             Downloader.Download(DownloadLink, path);
