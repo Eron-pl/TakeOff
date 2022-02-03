@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ComponentModel;
 using System.Collections;
+using System.Diagnostics;
 
 namespace TakeOff.Views
 {
@@ -60,14 +61,24 @@ namespace TakeOff.Views
         // Obsługa przycisku pobierania
         private void DwnldBtn_Click(object sender, RoutedEventArgs e)
         {
-            foreach (Program program in icProgramsList.Items)
+            MessageBoxResult result = MessageBox.Show("hejka, co tam u ciebie? znowu pobierasz jakieś programy?", "Pobieranie", MessageBoxButton.YesNo);
+
+            if(result == MessageBoxResult.Yes)
             {
-                //Jeżeli isSelected = true, pobierz program za pomocą .Download()
-                if(program.IsSelected == true)
+                foreach (Program program in icProgramsList.Items)
                 {
-                    program.Download();
+                    //Jeżeli isSelected = true, pobierz program za pomocą .Download()
+                    if (program.IsSelected == true)
+                    {
+                        program.Download();
+                    }
                 }
             }
+            else
+            {
+                Debug.WriteLine("Pobieranie anulowane przez użytkownika");
+            }
+            
         }
 
         // Zliczanie zaznaczonych paneli
