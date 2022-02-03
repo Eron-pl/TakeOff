@@ -71,6 +71,9 @@ namespace TakeOff.Views
                 //Pattern: iterator
                 var downloader = new DownloadAll();
                 downloader.Download(programsToDownload);
+
+                var installer = new InstallAll();
+                installer.Install(programsToDownload);
             }
             else
             {
