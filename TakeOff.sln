@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31729.503
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeOff", "TakeOff.csproj", "{541775FD-18B3-4F13-B389-625F745CB188}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TakeOff", "TakeOff.csproj", "{541775FD-18B3-4F13-B389-625F745CB188}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeOff.Tests", "..\TakeOff.Tests\TakeOff.Tests.csproj", "{3AD7E1C1-F010-40DA-8774-819DEC64B8BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{541775FD-18B3-4F13-B389-625F745CB188}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{541775FD-18B3-4F13-B389-625F745CB188}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{541775FD-18B3-4F13-B389-625F745CB188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AD7E1C1-F010-40DA-8774-819DEC64B8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD7E1C1-F010-40DA-8774-819DEC64B8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD7E1C1-F010-40DA-8774-819DEC64B8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD7E1C1-F010-40DA-8774-819DEC64B8BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

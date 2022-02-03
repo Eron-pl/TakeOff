@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace TakeOff
 {
-    class Downloader
+    public class Downloader
     {
         private static string FetchFilename(string url)
         {
