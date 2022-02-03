@@ -21,8 +21,7 @@ namespace TakeOff.Services
         public List<Program> Load()
         {
             var jsonText = File.ReadAllText(_path);
-            var programs = JsonConvert.DeserializeObject<List<Program>>(jsonText);
-            return programs;
+            return JsonConvert.DeserializeObject<List<Program>>(jsonText);
         }
     }
 }
