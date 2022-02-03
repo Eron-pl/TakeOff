@@ -28,7 +28,7 @@ namespace TakeOff.Resources
              set => SetValue(ref _visibility, value, nameof(Visibility));
         }
 
-        public void Download ()
+        public void Download()
         {
             Downloader.Download(DownloadLink);
         }

@@ -19,14 +19,22 @@ namespace TakeOff
             return url.Substring(url.LastIndexOf("/") + 1);
         }
 
-        public static void Download(string url, string location = @"C:\TakeOff Downloads\")
+        public static bool Download(string url, string location = @"C:\TakeOff Downloads\")
         {
             //location = local path to where the file has to be saved
             //url = web url to direct file download
-            WebClient client = new WebClient();
+            try 
+            {
+                WebClient client = new WebClient();
 
-            client.DownloadFile(url, location + FetchFilename(url));
-            Debug.WriteLine($"Pobieram plik, po pobraniu będzie można go znaleźć w {location}");
+                client.DownloadFile(url, location + FetchFilename(url));
+                Debug.WriteLine($"Pobieram plik, po pobraniu będzie można go znaleźć w {location}");
+            } 
+            catch
+            {
+                return false;
+            }
+            return true;
         }
     }
 }
