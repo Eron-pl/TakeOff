@@ -10,6 +10,7 @@ using System.Linq;
 using System.ComponentModel;
 using System.Collections;
 using System.Diagnostics;
+using TakeOff.Services;
 
 namespace TakeOff.Views
 {
@@ -65,14 +66,11 @@ namespace TakeOff.Views
 
             if(result == MessageBoxResult.Yes)
             {
-                foreach (Program program in icProgramsList.Items)
-                {
-                    //Jeżeli isSelected = true, pobierz program za pomocą .Download()
-                    if (program.IsSelected == true)
-                    {
-                        program.Download();
-                    }
-                }
+                var programsToDownload = _programs.Where(p => p.IsSelected).ToList();
+
+                //iterator
+                DownloadAll.Download(programsToDownload);
+                
             }
             else
             {
