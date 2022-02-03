@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TakeOff.Resources;
+using Newtonsoft.Json;
+using System.IO;
 
 namespace TakeOff.Services
 {
@@ -18,7 +20,9 @@ namespace TakeOff.Services
 
         public List<Program> Load()
         {
-            throw new NotImplementedException();
+            var jsonText = File.ReadAllText(_path);
+            var programs = JsonConvert.DeserializeObject<List<Program>>(jsonText);
+            return programs;
         }
     }
 }
