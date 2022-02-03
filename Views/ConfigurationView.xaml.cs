@@ -13,16 +13,25 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace TakeOff.Views
 {
-    /// <summary>
-    /// Logika interakcji dla klasy ConfigurationView.xaml
-    /// </summary>
     public partial class ConfigurationView : UserControl
     {
         public ConfigurationView()
         {
             InitializeComponent();
+        }
+
+        private void PathChooseBtn_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Forms.FolderBrowserDialog openFileDlg = new System.Windows.Forms.FolderBrowserDialog();
+            var result = openFileDlg.ShowDialog();
+            if (result.ToString() != string.Empty)
+            {
+                ChoosenPathTextBlock.Text = openFileDlg.SelectedPath;
+            }
+          
         }
     }
 }

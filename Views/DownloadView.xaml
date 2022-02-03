@@ -107,16 +107,24 @@
             <ItemsControl Name="icProgramsList" >
             <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Grid Height="200" Width="200" Name="wrapGrid" Margin="10">
+                        <Grid Name="wrapGrid">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="180" />
-                                    <RowDefinition Height="20" />
+                                    <RowDefinition  />
+                                    <RowDefinition  />
                                 </Grid.RowDefinitions>
 
-                                <ToggleButton Name="TglBtn" BorderThickness="0" IsChecked="{Binding isSelected, Mode=TwoWay}" Checked="TglBtn_Checked" Unchecked="TglBtn_Unchecked">
+                                <ToggleButton Name="TglBtn" 
+                                              BorderThickness="0" 
+                                              IsChecked="{Binding IsSelected, Mode=TwoWay}" 
+                                              Checked="TglBtn_Checked" 
+                                              Unchecked="TglBtn_Unchecked"
+                                              Width="190"
+                                              Height="190"
+                                              Margin="10 15 15 15"
+                                              Visibility="{Binding Visibility}">
                                     <StackPanel Grid.Column="0" Grid.Row="0" Name="topPanel" Tag="0">
                                         <Image Height="50" Width="50" Source="{Binding ImagePath}"/>
                                         <Label Style="{StaticResource Title}" Content="{Binding Name}"/>
@@ -133,7 +141,7 @@
                 <ItemsPanelTemplate>
                     <WrapPanel/>
                 </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
+         </ItemsControl.ItemsPanel>
         </ItemsControl>
         </ScrollViewer>
         </Grid>
