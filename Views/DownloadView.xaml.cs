@@ -68,9 +68,9 @@ namespace TakeOff.Views
             {
                 var programsToDownload = _programs.Where(p => p.IsSelected).ToList();
 
-                //iterator
-                DownloadAll.Download(programsToDownload);
-                
+                //Pattern: iterator
+                var downloader = new DownloadAll();
+                downloader.Download(programsToDownload);
             }
             else
             {

@@ -11,7 +11,7 @@ namespace TakeOff.Services
     {
         public void Download(List<Program> programs)
         {
-            //strategy
+            //Pattern: strategy
             foreach (var item in programs)
             {
                 //Jeżeli isSelected = true, pobierz program za pomocą .Download()

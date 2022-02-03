@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TakeOff.Resources
 {
-    public class Program: INotifyPropertyChanged // ViewModel
+    public class Program: INotifyPropertyChanged // Pattern: observer
     {
         public string Name { get; set; }
         public string Version { get; set; }
