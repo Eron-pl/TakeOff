@@ -286,6 +286,10 @@ __Scenariusz alternatywny:__
 1. Patryk Sablik
 * funkcjonalnosc
 2. Mateusz Nawieśniak
-* funcjonalnosc
+* Wybieranie programu z listy - kafelki
+* Wybieranie programu z list - obługa kafelek
+* Wybieranie programu z listy - obsługa pobierania wybranych programów
+* Pobieranie programów - obsługa i implementacja w interfejsie
+* Logo
 3. Bartłomiej Pisczur
 * funkcjonalnosc
