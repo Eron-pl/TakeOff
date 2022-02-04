@@ -282,3 +282,5 @@ __Scenariusz alternatywny:__
 * Uzytkownik nie wybrał programów
 * Użytkownik nie zgodził się na pobieranie
 
+## 6 Logi zrealizowanych funkcjonalności
+
