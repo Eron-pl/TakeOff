@@ -283,4 +283,9 @@ __Scenariusz alternatywny:__
 * Użytkownik nie zgodził się na pobieranie
 
 ## 6 Logi zrealizowanych funkcjonalności
-
+1. Patryk Sablik
+* funkcjonalnosc
+2. Mateusz Nawieśniak
+* funcjonalnosc
+3. Bartłomiej Pisczur
+* funkcjonalnosc
