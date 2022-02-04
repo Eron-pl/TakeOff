@@ -290,6 +290,7 @@ __Scenariusz alternatywny:__
 * Wybieranie programu z list - obługa kafelek
 * Wybieranie programu z listy - obsługa pobierania wybranych programów
 * Pobieranie programów - obsługa i implementacja w interfejsie
+* Testowanie funkcjonalności - testy
 * Logo
 3. Bartłomiej Pisczur
 * funkcjonalnosc
