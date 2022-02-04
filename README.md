@@ -261,5 +261,24 @@ __Scenariusz bazowy:__
 __Warunki końcowe:__    
 Programy zostały wyświetlone zgodnie z kryteriami
 
+### 5.8 UC #008: Wybieranie programów z listy
+__Aktorzy:__  
+Użytkownik
 
+__Cele:__  
+Zaznaczono wybrane programy do pobrania
+
+__Warunki początkowe:__  
+System wyświetlił wszystkie programy, żaden nie jest zaznaczony
+
+__Scenariusz bazowy:__
+1. Użytkownik wybiera interesujące go programy
+2. System na bazie tego zlicza zaznaczone pozycje i wyświetla przycisk pobierz
+3. Użytkownik klika przycik Pobierz w celu pobrania zaznaczonych programów
+4. System pyta użytkownika o ostateczne potwierdzenie pobierania
+5. System pobiera programy
+
+__Scenariusz alternatywny:__
+* Uzytkownik nie wybrał programów
+* Użytkownik nie zgodził się na pobieranie
 
