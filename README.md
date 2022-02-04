@@ -243,5 +243,23 @@ __Scenariusz alternatywny:__
 __Warunki końcowe:__    
 Oprogramowanie zostało zaktualizowane
 
+### 5.7 UC #007: Wyszukiwanie programów do instalacji
+__Aktorzy:__  
+Użytkownik
+
+__Cele:__  
+Wyszukanie konkretnych programów
+
+__Warunki początkowe:__  
+Program wyświetlił listę wszystkich programów
+
+__Scenariusz bazowy:__
+1. Użytkownik wchodzi w zakładkę 'Pobieranie'
+2. Użytkownik wpisuje frazę w pasek wyszukiwania
+3. Program wyświetla programy zgadzające się z podaną frazą
+
+__Warunki końcowe:__    
+Programy zostały wyświetlone zgodnie z kryteriami
+
 
 
