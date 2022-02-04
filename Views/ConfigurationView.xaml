@@ -6,15 +6,36 @@
              xmlns:local="clr-namespace:TakeOff.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#6f42c1"/>
+            <Setter Property="Foreground" Value="#FFF"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="0" CornerRadius="3">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Opacity" Value="0.85"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    
     <Border CornerRadius="0 0 10 0" Background="#f5f5f5">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
-                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
-                <RowDefinition />
+                <RowDefinition Height="75" />
+                <RowDefinition Height="125"/>
                 <RowDefinition />
             </Grid.RowDefinitions>
 
@@ -24,24 +45,40 @@
                    Foreground="#303030"
                    VerticalAlignment="Center"/>
 
-            <Button Content="Wybierz ściżkę pobierania programów"
-                    Grid.Row="1"
-                    Width="250"
-                    Height="50"
-                    Name="PathChooseBtn" Click="PathChooseBtn_Click"/>
+            <Button Width="100"
+                    Height="40"
+                    Content="Zapisz zmiany"
+                    HorizontalAlignment="Right"
+                    Margin="0 0 50 0"
+                    Name="ApplyChangesBtn" Click="ApplyChangesBtn_Click"/>
 
-            <Border Grid.Row="1" Grid.Column="1"
-                    Width="250"
-                    Height="50"
-                    BorderBrush="Gray"
-                    BorderThickness="2">
-                <TextBlock 
-                       Text="Brak wybranej ścieżki"
-                       HorizontalAlignment="Center"
-                       VerticalAlignment="Center"
-                       Name="ChoosenPathTextBlock"
-                       />
-            </Border>
+            <Label Content="Scieżka zapisu programów"
+                   VerticalAlignment="Top"
+                   Margin="20,10,15,0" 
+                   FontSize="18"
+                   Grid.Row="1"/>
+
+            <StackPanel Grid.Row="1" 
+                        Orientation="Horizontal"
+                        Margin="10 0 0 0">
+                <Border Grid.Row="1"
+                        Width="350"
+                        Height="30"
+                        Margin="15,0,15,0" 
+                        BorderBrush="Gray"
+                        BorderThickness="2">
+                    <TextBlock 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Name="ChoosenPathTextBlock"/>
+                </Border>
+
+                <Button Content="Wybierz inną"
+                        Grid.Row="1"
+                        Width="100"
+                        Height="30"
+                        Name="PathChooseBtn" Click="PathChooseBtn_Click"/>
+            </StackPanel>
         </Grid>
     </Border>
 </UserControl>
