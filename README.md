@@ -284,7 +284,12 @@ __Scenariusz alternatywny:__
 
 ## 6 Logi zrealizowanych funkcjonalności
 1. Patryk Sablik
-* funkcjonalnosc
+* Layout, kolorystyka i design programu
+* Wyświetlanie dostępnych prgramów z pliku JSON
+* Instalowanie programu 
+* Testowanie funkcjonalności - testy
+* Pole wyszukiwania programów
+* Wybieranie ścieżki gdzie się mają instalować pobrane programy
 2. Mateusz Nawieśniak
 * Wybieranie programu z listy - kafelki
 * Wybieranie programu z list - obługa kafelek
